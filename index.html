@@ -199,15 +199,15 @@ document.querySelectorAll('.faq__question-acordion').forEach( (el) =&gt; {
             content.style.maxHeight = null;
             expand.classList.remove('active');
         } else {
-            document.querySelectorAll('.faq__question-answer').forEach((el) =&gt; 
+            document.querySelectorAll('.faq__question-answer').forEach((el) =&gt;
                 el.style.maxHeight = null);
-            document.querySelectorAll('.faq__question-expand').forEach((el) =&gt; 
+            document.querySelectorAll('.faq__question-expand').forEach((el) =&gt;
                 el.classList.remove('active'));
             content.style.maxHeight = content.scrollHeight + 'px';
             expand.classList.add('active');
         }
     });
-});                               
+});
                             </pre>
                         </div>
                     </section>
