@@ -193,17 +193,17 @@
                             <a href="https://koldovsky.github.io/725-team-03/"><h4 class="projects__item">WebSite Portfolio and FAQ block</h4></a>
                             <h4 class="projects__code-title uppercase">Code example</h4>
                             <pre class="projects__code">
-document.querySelectorAll('.faq__question-acordion').forEach( (el) => {
-    el.addEventListener('click', () => {
+document.querySelectorAll('.faq__question-acordion').forEach( (el) =&gt; {
+    el.addEventListener('click', () =&gt; {
         let content = el.lastElementChild;
         let expand = el.firstElementChild.lastElementChild;
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
             expand.classList.remove('active');
         } else {
-            document.querySelectorAll('.faq__question-answer').forEach((el) => 
+            document.querySelectorAll('.faq__question-answer').forEach((el) =&gt; 
                 el.style.maxHeight = null);
-            document.querySelectorAll('.faq__question-expand').forEach((el) => 
+            document.querySelectorAll('.faq__question-expand').forEach((el) =&gt; 
                 el.classList.remove('active'));
             content.style.maxHeight = content.scrollHeight + 'px';
             expand.classList.add('active');
